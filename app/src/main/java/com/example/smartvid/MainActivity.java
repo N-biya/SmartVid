@@ -14,7 +14,9 @@ import android.widget.MediaController;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     private static final int PICK_MEDIA = 1;
     private ImageView imageView;

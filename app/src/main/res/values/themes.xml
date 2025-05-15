@@ -1,9 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
+    <!-- Base application theme -->
     <style name="Base.Theme.SmartVid" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Customize your theme -->
     </style>
 
     <style name="Theme.SmartVid" parent="Base.Theme.SmartVid" />
-</resources>
+
+    <!-- SPLASH SCREEN THEME -->
+    <!-- <style name="Theme.SmartVid.Splash" parent="Base.Theme.SmartVid">
+         <item name="windowSplashScreenBackground">#FFFFFF</item>
+         <item name="postSplashScreenTheme">@style/Theme.SmartVid</item>
+     </style> -->
+
+ </resources>
