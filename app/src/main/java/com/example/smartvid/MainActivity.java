@@ -1,10 +1,12 @@
 package com.example.smartvid;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
 import android.view.ViewTreeObserver;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +58,21 @@ public class MainActivity extends AppCompatActivity {
         };
 
         createNew.getViewTreeObserver().addOnGlobalLayoutListener(gradientListener);
+
+        //going to new activities
+        FrameLayout circle1 = findViewById(R.id.circle1);
+        FrameLayout circle2 = findViewById(R.id.circle2);
+
+        circle1.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, VideoActivity.class);
+            startActivity(intent);
+        });
+
+        circle2.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PhotoActivity.class);
+            startActivity(intent);
+        });
+
 
     }
 }
